@@ -5,6 +5,8 @@
 //  Created by 碓氷隼也 on 2017/08/02.
 //  Copyright © 2017年 碓氷隼也. All rights reserved.
 //
+// こんにちは山口です
+
 
 import UIKit
 
