@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="N" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZTO-fJ-HeR">
+                                <rect key="frame" x="0.0" y="214" width="375" height="239"/>
+                                <date key="date" timeIntervalSinceReferenceDate="523330309.75334001">
+                                    <!--2017-08-02 01:31:49 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="myDPFunc:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ss2-7N-vP8"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X30-iL-eHL">
+                                <rect key="frame" x="164" y="185" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC7-Y4-ncY">
+                                <rect key="frame" x="164" y="468" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="myBFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Va1-lW-Svh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZTO-fJ-HeR" secondAttribute="trailing" id="6Uz-m8-Ofd"/>
+                            <constraint firstItem="ZTO-fJ-HeR" firstAttribute="top" secondItem="X30-iL-eHL" secondAttribute="bottom" constant="8" symbolic="YES" id="8Pl-BU-SuB"/>
+                            <constraint firstItem="ZTO-fJ-HeR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B2s-W7-KOO"/>
+                            <constraint firstItem="WC7-Y4-ncY" firstAttribute="top" secondItem="ZTO-fJ-HeR" secondAttribute="bottom" constant="15" id="El9-MX-Kn8"/>
+                            <constraint firstItem="X30-iL-eHL" firstAttribute="leading" secondItem="WC7-Y4-ncY" secondAttribute="leading" id="G2f-Is-uyT"/>
+                            <constraint firstItem="ZTO-fJ-HeR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TmT-YI-WDK"/>
+                            <constraint firstItem="X30-iL-eHL" firstAttribute="trailing" secondItem="WC7-Y4-ncY" secondAttribute="trailing" id="VIt-Ug-gUd"/>
+                            <constraint firstItem="X30-iL-eHL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="165" id="iH5-cy-hcW"/>
+                            <constraint firstItem="X30-iL-eHL" firstAttribute="centerX" secondItem="ZTO-fJ-HeR" secondAttribute="centerX" id="uzL-kU-Ymn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myDP" destination="ZTO-fJ-HeR" id="9Je-82-TGY"/>
+                        <outlet property="myLabel" destination="X30-iL-eHL" id="Nix-Wa-7mF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
